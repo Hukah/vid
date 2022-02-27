@@ -13,7 +13,7 @@ const peerServer = ExpressPeerServer(server, {
   debug: true,
 });
 
-app.use(":3001/", peerServer);
+app.use("chat-peerjs-server.herokuapp.com", peerServer);
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
