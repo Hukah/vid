@@ -22,8 +22,9 @@ showChat.addEventListener("click", () => {
 const user = prompt("Enter your name");
 
 var peer = new Peer(undefined, {
-	host: "chat-peerjs-server.herokuapp.com",
-	secure: true
+  // Enter your Peer IP address here too
+  host: "Your Peerjs server IP address",
+  secure: true
 });
 
 let myVideoStream;

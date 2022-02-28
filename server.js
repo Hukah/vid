@@ -13,7 +13,8 @@ const peerServer = ExpressPeerServer(server, {
   debug: true,
 });
 
-app.use("https://chat-peerjs-server.herokuapp.com", peerServer);
+// Enter your Peer server IP address
+app.use("Your Peerjs IP Address", peerServer);
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
