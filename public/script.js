@@ -23,7 +23,8 @@ const user = prompt("Enter your name");
 
 var peer = new Peer(undefined, {
   // Enter your Peer IP address here too
-  host: "Your Peerjs server IP address",
+  host: "localhost",
+  port: "3001",
   secure: true
 });
 
