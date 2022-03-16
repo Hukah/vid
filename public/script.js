@@ -168,6 +168,11 @@ a.download = 'video.webm'
 a.click()
 })
 
-    //начинать запись нужно вручную
+    
     mediaRecorder.start()
 })
+
+function closeWindow() {
+  window.open('','_parent','');
+  window.close();
+}
